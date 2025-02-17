@@ -1,0 +1,29 @@
+https://chocolatey.org/install
+1. install chocolatey package manager-> run the following command on powershell as administrator mode
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+2. To install kubectl on Windows you can use Chocolatey package manager
+
+choco install kubernetes-cli
+
+3 Test to ensure the version you installed is up-to-date:
+ kubectl version --client
+
+4. we create .kube/config  file in userprofile folder this config file is used to get cluster information
+
+
+5.Now install minkube using choco package manager 
+
+choco install minikube
+
+6. start minikube cluster using the fillowing command
+
+ minikube start
+
+7 check minikube
+
+ docker ps
+ 
+
+
